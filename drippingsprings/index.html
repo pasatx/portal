@@ -683,11 +683,11 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12}
     <h1>PASA <em>Planning Portal</em></h1>
     <p class="lede">Three purpose-built mapping applications — one portal for enrollment projections, long-range facilities planning, and attendance-zone clarity.</p>
     <div class="hero-tools">
-      <a class="hero-card" href="https://experience.arcgis.com/experience/9c9bff46787d47b18002c34df5ee7e1f" target="_blank" rel="noopener">
-        <span class="tool-tag t-pro">01 · Planning teams</span>
-        <strong>PASA Atlas Pro</strong>
-        <span class="hc-desc">The full analytical workbench: select any area and study the students and addresses inside it by grade and school level.</span>
-        <span class="hc-cta">Open Atlas Pro <span class="arrow">→</span></span>
+      <a class="hero-card" href="https://schoolfinder.pasatx.com/drippingsprings/" target="_blank" rel="noopener">
+        <span class="tool-tag t-finder">01 · Families &amp; community</span>
+        <strong>School Finder</strong>
+        <span class="hc-desc">The public-facing school lookup: any address, its zoned schools in one click.</span>
+        <span class="hc-cta">Open School Finder <span class="arrow">→</span></span>
       </a>
       <a class="hero-card" href="https://experience.arcgis.com/experience/827b101c2b4044c0a1f1c780c967ee61" target="_blank" rel="noopener">
         <span class="tool-tag t-atlas">02 · Committees &amp; leadership</span>
@@ -695,11 +695,11 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12}
         <span class="hc-desc">The district at a glance: enrollment, zones, development, and parcels unified in one interactive map.</span>
         <span class="hc-cta">Open Atlas <span class="arrow">→</span></span>
       </a>
-      <a class="hero-card" href="https://schoolfinder.pasatx.com/drippingsprings/" target="_blank" rel="noopener">
-        <span class="tool-tag t-finder">03 · Families &amp; community</span>
-        <strong>School Finder</strong>
-        <span class="hc-desc">The public-facing school lookup: any address, its zoned schools in one click.</span>
-        <span class="hc-cta">Open School Finder <span class="arrow">→</span></span>
+      <a class="hero-card" href="https://experience.arcgis.com/experience/9c9bff46787d47b18002c34df5ee7e1f" target="_blank" rel="noopener">
+        <span class="tool-tag t-pro">03 · Planning teams</span>
+        <strong>PASA Atlas Pro</strong>
+        <span class="hc-desc">The full analytical workbench: select any area and study the students and addresses inside it by grade and school level.</span>
+        <span class="hc-cta">Open Atlas Pro <span class="arrow">→</span></span>
       </a>
     </div>
   </div>
@@ -715,9 +715,9 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12}
   <div class="workspace-shell" style="flex:1;display:flex;flex-direction:column;border-radius:0;max-width:none;margin:0">
     <div class="ws-tabs" role="tablist" aria-label="PASA tools">
       <button class="ws-tab active" role="tab" aria-selected="true" data-tool="home"><span class="dot dot-home"></span>Home</button>
-      <button class="ws-tab" role="tab" aria-selected="false" data-tool="pro"><span class="dot"></span>Atlas Pro</button>
-      <button class="ws-tab" role="tab" aria-selected="false" data-tool="atlas"><span class="dot"></span>Atlas</button>
       <button class="ws-tab" role="tab" aria-selected="false" data-tool="finder"><span class="dot"></span>School Finder</button>
+      <button class="ws-tab" role="tab" aria-selected="false" data-tool="atlas"><span class="dot"></span>Atlas</button>
+      <button class="ws-tab" role="tab" aria-selected="false" data-tool="pro"><span class="dot"></span>Atlas Pro</button>
       <a class="ws-open" id="wsOpen" href="https://experience.arcgis.com/experience/9c9bff46787d47b18002c34df5ee7e1f" target="_blank" rel="noopener" hidden>Open in new tab ↗</a>
       <button class="ws-fs" id="wsFs" aria-label="Toggle full screen"><span class="fs-ico">⛶</span><span class="fs-label">Full screen</span></button>
     </div>
@@ -731,20 +731,20 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12}
         <h3>Welcome to the PASA Planning Portal</h3>
         <p>Choose a tool to begin — you can return here anytime from the Home tab.</p>
         <div class="wsw-choices">
-          <button class="wsw-card" data-choose="pro"><span class="tool-tag t-pro">Planning teams</span><strong>Atlas Pro</strong></button>
-          <button class="wsw-card" data-choose="atlas"><span class="tool-tag t-atlas">Committees &amp; leadership</span><strong>Atlas</strong></button>
           <button class="wsw-card" data-choose="finder"><span class="tool-tag t-finder">Families &amp; community</span><strong>School Finder</strong></button>
+          <button class="wsw-card" data-choose="atlas"><span class="tool-tag t-atlas">Committees &amp; leadership</span><strong>Atlas</strong></button>
+          <button class="wsw-card" data-choose="pro"><span class="tool-tag t-pro">Planning teams</span><strong>Atlas Pro</strong></button>
         </div>
       </div>
       <div class="ws-loading hidden" id="wsLoading"><span class="ring"></span>Rendering live application</div>
-      <iframe class="ws-frame" id="frame-pro" title="PASA Atlas Pro — live application"
-        data-src="https://experience.arcgis.com/experience/9c9bff46787d47b18002c34df5ee7e1f"
+      <iframe class="ws-frame" id="frame-finder" title="School Finder — live application"
+        data-src="https://schoolfinder.pasatx.com/drippingsprings/"
         allow="geolocation" loading="lazy"></iframe>
       <iframe class="ws-frame" id="frame-atlas" title="PASA Atlas — live application"
         data-src="https://experience.arcgis.com/experience/827b101c2b4044c0a1f1c780c967ee61"
         allow="geolocation" loading="lazy"></iframe>
-      <iframe class="ws-frame" id="frame-finder" title="School Finder — live application"
-        data-src="https://schoolfinder.pasatx.com/drippingsprings/"
+      <iframe class="ws-frame" id="frame-pro" title="PASA Atlas Pro — live application"
+        data-src="https://experience.arcgis.com/experience/9c9bff46787d47b18002c34df5ee7e1f"
         allow="geolocation" loading="lazy"></iframe>
     </div>
   </div>
